@@ -12,18 +12,30 @@
 		3C67D5EA17ABC17C00DCB749 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C67D5E917ABC17C00DCB749 /* CoreGraphics.framework */; };
 		3C67D5F017ABC17C00DCB749 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D5EE17ABC17C00DCB749 /* InfoPlist.strings */; };
 		3C67D5F217ABC17C00DCB749 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D5F117ABC17C00DCB749 /* main.m */; };
-		3C67D5F617ABC17C00DCB749 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D5F517ABC17C00DCB749 /* AppDelegate.m */; };
 		3C67D5F817ABC17C00DCB749 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D5F717ABC17C00DCB749 /* Default.png */; };
 		3C67D5FA17ABC17C00DCB749 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D5F917ABC17C00DCB749 /* Default@2x.png */; };
 		3C67D5FC17ABC17C00DCB749 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D5FB17ABC17C00DCB749 /* Default-568h@2x.png */; };
 		3C67D5FF17ABC17C00DCB749 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D5FD17ABC17C00DCB749 /* MainStoryboard_iPhone.storyboard */; };
 		3C67D60217ABC17C00DCB749 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D60017ABC17C00DCB749 /* MainStoryboard_iPad.storyboard */; };
-		3C67D60517ABC17C00DCB749 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D60417ABC17C00DCB749 /* ViewController.m */; };
 		3C67D60D17ABC17C00DCB749 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C67D60C17ABC17C00DCB749 /* SenTestingKit.framework */; };
 		3C67D60E17ABC17C00DCB749 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C67D5E517ABC17C00DCB749 /* UIKit.framework */; };
 		3C67D60F17ABC17C00DCB749 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C67D5E717ABC17C00DCB749 /* Foundation.framework */; };
 		3C67D61717ABC17C00DCB749 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D61517ABC17C00DCB749 /* InfoPlist.strings */; };
 		3C67D61A17ABC17C00DCB749 /* SandBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D61917ABC17C00DCB749 /* SandBoxTests.m */; };
+		3C67D62417ABC1EE00DCB749 /* IMG_0001.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D62317ABC1EE00DCB749 /* IMG_0001.PNG */; };
+		3C67D62D17ABC1FD00DCB749 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D62617ABC1FD00DCB749 /* GameViewController.m */; };
+		3C67D62E17ABC1FD00DCB749 /* IMG_0001.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D62717ABC1FD00DCB749 /* IMG_0001.PNG */; };
+		3C67D62F17ABC1FD00DCB749 /* African Daisy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D62817ABC1FD00DCB749 /* African Daisy.gif */; };
+		3C67D63017ABC1FD00DCB749 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D62A17ABC1FD00DCB749 /* AppDelegate.m */; };
+		3C67D63117ABC1FD00DCB749 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D62C17ABC1FD00DCB749 /* ViewController.m */; };
+		3C67D63B17ABC21300DCB749 /* hige.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D63217ABC21300DCB749 /* hige.png */; };
+		3C67D63C17ABC21300DCB749 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D63417ABC21300DCB749 /* CameraViewController.m */; };
+		3C67D63D17ABC21300DCB749 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D63617ABC21300DCB749 /* MapViewController.m */; };
+		3C67D63E17ABC21300DCB749 /* MapStateAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D63817ABC21300DCB749 /* MapStateAnnotation.m */; };
+		3C67D63F17ABC21300DCB749 /* MapStateAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D63A17ABC21300DCB749 /* MapStateAnnotationView.m */; };
+		3C67D64117ABC22700DCB749 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C67D64017ABC22700DCB749 /* CoreImage.framework */; };
+		3C67D64317ABC23000DCB749 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C67D64217ABC22F00DCB749 /* CoreLocation.framework */; };
+		3C67D64517ABC23700DCB749 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C67D64417ABC23700DCB749 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,21 +57,38 @@
 		3C67D5EF17ABC17C00DCB749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C67D5F117ABC17C00DCB749 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3C67D5F317ABC17C00DCB749 /* SandBox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SandBox-Prefix.pch"; sourceTree = "<group>"; };
-		3C67D5F417ABC17C00DCB749 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3C67D5F517ABC17C00DCB749 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3C67D5F717ABC17C00DCB749 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3C67D5F917ABC17C00DCB749 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3C67D5FB17ABC17C00DCB749 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3C67D5FE17ABC17C00DCB749 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		3C67D60117ABC17C00DCB749 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		3C67D60317ABC17C00DCB749 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3C67D60417ABC17C00DCB749 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3C67D60B17ABC17C00DCB749 /* SandBoxTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandBoxTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C67D60C17ABC17C00DCB749 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		3C67D61417ABC17C00DCB749 /* SandBoxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SandBoxTests-Info.plist"; sourceTree = "<group>"; };
 		3C67D61617ABC17C00DCB749 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C67D61817ABC17C00DCB749 /* SandBoxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandBoxTests.h; sourceTree = "<group>"; };
 		3C67D61917ABC17C00DCB749 /* SandBoxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SandBoxTests.m; sourceTree = "<group>"; };
+		3C67D62317ABC1EE00DCB749 /* IMG_0001.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_0001.PNG; path = ../../HelloWorldApp/HelloWorldApp/IMG_0001.PNG; sourceTree = "<group>"; };
+		3C67D62517ABC1FD00DCB749 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = ../../HelloWorldApp/HelloWorldApp/GameViewController.h; sourceTree = "<group>"; };
+		3C67D62617ABC1FD00DCB749 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = ../../HelloWorldApp/HelloWorldApp/GameViewController.m; sourceTree = "<group>"; };
+		3C67D62717ABC1FD00DCB749 /* IMG_0001.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_0001.PNG; path = ../../HelloWorldApp/HelloWorldApp/IMG_0001.PNG; sourceTree = "<group>"; };
+		3C67D62817ABC1FD00DCB749 /* African Daisy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "African Daisy.gif"; path = "../../HelloWorldApp/HelloWorldApp/African Daisy.gif"; sourceTree = "<group>"; };
+		3C67D62917ABC1FD00DCB749 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../HelloWorldApp/HelloWorldApp/AppDelegate.h; sourceTree = "<group>"; };
+		3C67D62A17ABC1FD00DCB749 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../HelloWorldApp/HelloWorldApp/AppDelegate.m; sourceTree = "<group>"; };
+		3C67D62B17ABC1FD00DCB749 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../HelloWorldApp/HelloWorldApp/ViewController.h; sourceTree = "<group>"; };
+		3C67D62C17ABC1FD00DCB749 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../HelloWorldApp/HelloWorldApp/ViewController.m; sourceTree = "<group>"; };
+		3C67D63217ABC21300DCB749 /* hige.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hige.png; path = ../../HelloWorldApp/HelloWorldApp/hige.png; sourceTree = "<group>"; };
+		3C67D63317ABC21300DCB749 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../../HelloWorldApp/HelloWorldApp/CameraViewController.h; sourceTree = "<group>"; };
+		3C67D63417ABC21300DCB749 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../../HelloWorldApp/HelloWorldApp/CameraViewController.m; sourceTree = "<group>"; };
+		3C67D63517ABC21300DCB749 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../../HelloWorldApp/HelloWorldApp/MapViewController.h; sourceTree = "<group>"; };
+		3C67D63617ABC21300DCB749 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../../HelloWorldApp/HelloWorldApp/MapViewController.m; sourceTree = "<group>"; };
+		3C67D63717ABC21300DCB749 /* MapStateAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapStateAnnotation.h; path = ../../HelloWorldApp/HelloWorldApp/MapStateAnnotation.h; sourceTree = "<group>"; };
+		3C67D63817ABC21300DCB749 /* MapStateAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapStateAnnotation.m; path = ../../HelloWorldApp/HelloWorldApp/MapStateAnnotation.m; sourceTree = "<group>"; };
+		3C67D63917ABC21300DCB749 /* MapStateAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapStateAnnotationView.h; path = ../../HelloWorldApp/HelloWorldApp/MapStateAnnotationView.h; sourceTree = "<group>"; };
+		3C67D63A17ABC21300DCB749 /* MapStateAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapStateAnnotationView.m; path = ../../HelloWorldApp/HelloWorldApp/MapStateAnnotationView.m; sourceTree = "<group>"; };
+		3C67D64017ABC22700DCB749 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		3C67D64217ABC22F00DCB749 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3C67D64417ABC23700DCB749 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +96,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C67D64517ABC23700DCB749 /* MapKit.framework in Frameworks */,
+				3C67D64317ABC23000DCB749 /* CoreLocation.framework in Frameworks */,
+				3C67D64117ABC22700DCB749 /* CoreImage.framework in Frameworks */,
 				3C67D5E617ABC17C00DCB749 /* UIKit.framework in Frameworks */,
 				3C67D5E817ABC17C00DCB749 /* Foundation.framework in Frameworks */,
 				3C67D5EA17ABC17C00DCB749 /* CoreGraphics.framework in Frameworks */,
@@ -108,6 +140,9 @@
 		3C67D5E417ABC17C00DCB749 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C67D64417ABC23700DCB749 /* MapKit.framework */,
+				3C67D64217ABC22F00DCB749 /* CoreLocation.framework */,
+				3C67D64017ABC22700DCB749 /* CoreImage.framework */,
 				3C67D5E517ABC17C00DCB749 /* UIKit.framework */,
 				3C67D5E717ABC17C00DCB749 /* Foundation.framework */,
 				3C67D5E917ABC17C00DCB749 /* CoreGraphics.framework */,
@@ -119,12 +154,19 @@
 		3C67D5EB17ABC17C00DCB749 /* SandBox */ = {
 			isa = PBXGroup;
 			children = (
-				3C67D5F417ABC17C00DCB749 /* AppDelegate.h */,
-				3C67D5F517ABC17C00DCB749 /* AppDelegate.m */,
+				3C67D64717ABC36000DCB749 /* Map */,
+				3C67D64617ABC34B00DCB749 /* Camera */,
+				3C67D62517ABC1FD00DCB749 /* GameViewController.h */,
+				3C67D62617ABC1FD00DCB749 /* GameViewController.m */,
+				3C67D62717ABC1FD00DCB749 /* IMG_0001.PNG */,
+				3C67D62817ABC1FD00DCB749 /* African Daisy.gif */,
+				3C67D62917ABC1FD00DCB749 /* AppDelegate.h */,
+				3C67D62A17ABC1FD00DCB749 /* AppDelegate.m */,
+				3C67D62B17ABC1FD00DCB749 /* ViewController.h */,
+				3C67D62C17ABC1FD00DCB749 /* ViewController.m */,
+				3C67D62317ABC1EE00DCB749 /* IMG_0001.PNG */,
 				3C67D5FD17ABC17C00DCB749 /* MainStoryboard_iPhone.storyboard */,
 				3C67D60017ABC17C00DCB749 /* MainStoryboard_iPad.storyboard */,
-				3C67D60317ABC17C00DCB749 /* ViewController.h */,
-				3C67D60417ABC17C00DCB749 /* ViewController.m */,
 				3C67D5EC17ABC17C00DCB749 /* Supporting Files */,
 			);
 			path = SandBox;
@@ -161,6 +203,29 @@
 				3C67D61517ABC17C00DCB749 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C67D64617ABC34B00DCB749 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				3C67D63217ABC21300DCB749 /* hige.png */,
+				3C67D63317ABC21300DCB749 /* CameraViewController.h */,
+				3C67D63417ABC21300DCB749 /* CameraViewController.m */,
+			);
+			name = Camera;
+			sourceTree = "<group>";
+		};
+		3C67D64717ABC36000DCB749 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				3C67D63517ABC21300DCB749 /* MapViewController.h */,
+				3C67D63617ABC21300DCB749 /* MapViewController.m */,
+				3C67D63717ABC21300DCB749 /* MapStateAnnotation.h */,
+				3C67D63817ABC21300DCB749 /* MapStateAnnotation.m */,
+				3C67D63917ABC21300DCB749 /* MapStateAnnotationView.h */,
+				3C67D63A17ABC21300DCB749 /* MapStateAnnotationView.m */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +304,10 @@
 				3C67D5FC17ABC17C00DCB749 /* Default-568h@2x.png in Resources */,
 				3C67D5FF17ABC17C00DCB749 /* MainStoryboard_iPhone.storyboard in Resources */,
 				3C67D60217ABC17C00DCB749 /* MainStoryboard_iPad.storyboard in Resources */,
+				3C67D62417ABC1EE00DCB749 /* IMG_0001.PNG in Resources */,
+				3C67D62E17ABC1FD00DCB749 /* IMG_0001.PNG in Resources */,
+				3C67D62F17ABC1FD00DCB749 /* African Daisy.gif in Resources */,
+				3C67D63B17ABC21300DCB749 /* hige.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +343,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C67D5F217ABC17C00DCB749 /* main.m in Sources */,
-				3C67D5F617ABC17C00DCB749 /* AppDelegate.m in Sources */,
-				3C67D60517ABC17C00DCB749 /* ViewController.m in Sources */,
+				3C67D62D17ABC1FD00DCB749 /* GameViewController.m in Sources */,
+				3C67D63017ABC1FD00DCB749 /* AppDelegate.m in Sources */,
+				3C67D63117ABC1FD00DCB749 /* ViewController.m in Sources */,
+				3C67D63C17ABC21300DCB749 /* CameraViewController.m in Sources */,
+				3C67D63D17ABC21300DCB749 /* MapViewController.m in Sources */,
+				3C67D63E17ABC21300DCB749 /* MapStateAnnotation.m in Sources */,
+				3C67D63F17ABC21300DCB749 /* MapStateAnnotationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +432,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -383,7 +457,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
