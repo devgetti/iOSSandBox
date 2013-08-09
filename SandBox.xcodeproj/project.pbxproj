@@ -37,7 +37,6 @@
 		3C67D69D17AF382700DCB749 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D69C17AF382700DCB749 /* FlipsideViewController.m */; };
 		3C67D6A117AF3B2E00DCB749 /* UtilityMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D6A017AF3B2E00DCB749 /* UtilityMainViewController.m */; };
 		3C67D6A417AF658A00DCB749 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C67D6A217AF658900DCB749 /* MainStoryboard_iPhone.storyboard */; };
-		3C67D6AE17AF774900DCB749 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D6AD17AF774800DCB749 /* TableViewController.m */; };
 		3C67D6B217AF93A100DCB749 /* MenuData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D6B117AF93A100DCB749 /* MenuData.m */; };
 		3C67D6BB17B081BF00DCB749 /* MailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C67D6BA17B081BF00DCB749 /* MailViewController.m */; };
 		3C67D6BD17B081F000DCB749 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C67D6BC17B081F000DCB749 /* MessageUI.framework */; };
@@ -56,6 +55,7 @@
 		3CAC234F17B4C98100FE6BD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC234E17B4C98000FE6BD3 /* AppDelegate.m */; };
 		3CAC235217B4C9B100FE6BD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC235117B4C9AA00FE6BD3 /* ViewController.m */; };
 		3CAC235417B4CA9E00FE6BD3 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC235317B4CA9E00FE6BD3 /* earth.jpg */; };
+		3CAC235717B4CB6200FE6BD3 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC235617B4CB6200FE6BD3 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,8 +109,6 @@
 		3C67D6A617AF65FC00DCB749 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		3C67D6A717AF65FC00DCB749 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C67D6A817AF65FC00DCB749 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3C67D6AC17AF774800DCB749 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
-		3C67D6AD17AF774800DCB749 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
 		3C67D6B017AF93A100DCB749 /* MenuData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuData.h; sourceTree = "<group>"; };
 		3C67D6B117AF93A100DCB749 /* MenuData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuData.m; sourceTree = "<group>"; };
 		3C67D6B917B081BF00DCB749 /* MailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailViewController.h; sourceTree = "<group>"; };
@@ -144,6 +142,8 @@
 		3CAC235017B4C9A800FE6BD3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3CAC235117B4C9AA00FE6BD3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3CAC235317B4CA9E00FE6BD3 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
+		3CAC235517B4CB6200FE6BD3 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		3CAC235617B4CB6200FE6BD3 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,8 +338,8 @@
 		3C67D6AF17AF81E300DCB749 /* Table */ = {
 			isa = PBXGroup;
 			children = (
-				3C67D6AC17AF774800DCB749 /* TableViewController.h */,
-				3C67D6AD17AF774800DCB749 /* TableViewController.m */,
+				3CAC235517B4CB6200FE6BD3 /* TableViewController.h */,
+				3CAC235617B4CB6200FE6BD3 /* TableViewController.m */,
 				3C67D6B017AF93A100DCB749 /* MenuData.h */,
 				3C67D6B117AF93A100DCB749 /* MenuData.m */,
 			);
@@ -515,7 +515,6 @@
 				3C67D5F217ABC17C00DCB749 /* main.m in Sources */,
 				3C67D69D17AF382700DCB749 /* FlipsideViewController.m in Sources */,
 				3C67D6A117AF3B2E00DCB749 /* UtilityMainViewController.m in Sources */,
-				3C67D6AE17AF774900DCB749 /* TableViewController.m in Sources */,
 				3C67D6B217AF93A100DCB749 /* MenuData.m in Sources */,
 				3C67D6BB17B081BF00DCB749 /* MailViewController.m in Sources */,
 				3C67D6C117B08BC000DCB749 /* AccelerometerViewController.m in Sources */,
@@ -533,6 +532,7 @@
 				3CAC234C17B4C95300FE6BD3 /* CameraViewController.m in Sources */,
 				3CAC234F17B4C98100FE6BD3 /* AppDelegate.m in Sources */,
 				3CAC235217B4C9B100FE6BD3 /* ViewController.m in Sources */,
+				3CAC235717B4CB6200FE6BD3 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
