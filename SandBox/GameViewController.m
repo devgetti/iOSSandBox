@@ -1,6 +1,6 @@
 //
 //  GameViewController.m
-//  HelloWorldApp
+//  SandBox
 //
 //  Created by akosuge on 2013/08/01.
 //  Copyright (c) 2013年 akosuge. All rights reserved.
