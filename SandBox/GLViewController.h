@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GLViewController : UIViewController {
+@interface GLViewController : UIViewController <UIGestureRecognizerDelegate> {
     CADisplayLink * mpDisplayLink;
 }
 
+- (id)initWithGLViewFrame:(CGRect) bounds;
 - (void)MainLoop;
 
 @end

@@ -211,8 +211,10 @@ static void drawScene(GLfloat screenWidth, GLfloat screenHeight) {
 	return [ CAEAGLLayer class ];
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
+- (id)initWithFrame:(CGRect)frame
+//- (id)initWithCoder:(NSCoder *)aDecoder 
+{
+    self = [super initWithFrame:frame];
     
     if(self) {
         // Initialization code
@@ -249,16 +251,24 @@ static void drawScene(GLfloat screenWidth, GLfloat screenHeight) {
         glGenRenderbuffersOES(1, &mColorBuffer);
         glBindRenderbufferOES(GL_RENDERBUFFER_OES, mColorBuffer);
 
+        // レンダーバッファの描画先をレイヤーに設定する(これをやった後でないと描画領域のサイズが取得できない)
         [mpGLContext renderbufferStorage:GL_RENDERBUFFER_OES fromDrawable:pGLLayer];
         
+        // カラーバッファをフレームバッファに関連づける
         glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_COLOR_ATTACHMENT0_OES, GL_RENDERBUFFER_OES, mColorBuffer);
         
-        // 深度バッファ作成
+        // 現在の(カラー)？レンダーバッファから幅と高さを取得
         glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_WIDTH, &backingWidth);
         glGetRenderbufferParameterivOES(GL_RENDERBUFFER_OES, GL_RENDERBUFFER_HEIGHT, &backingHeight);
+
+        // 深度バッファ作成
         glGenRenderbuffersOES(1, &mDepthBuffer);
         glBindRenderbufferOES(GL_RENDERBUFFER_OES, mDepthBuffer);
+        
+        // 深度バッファの保存先を作成
         glRenderbufferStorageOES(GL_RENDERBUFFER_OES, GL_DEPTH_COMPONENT16_OES, backingWidth, backingHeight);
+        
+        // 深度バッファをフレームバッファと関連づける
         glFramebufferRenderbufferOES(GL_FRAMEBUFFER_OES, GL_DEPTH_ATTACHMENT_OES, GL_RENDERBUFFER_OES, mDepthBuffer);
         
         // フレームバッファのチェック
@@ -273,22 +283,34 @@ static void drawScene(GLfloat screenWidth, GLfloat screenHeight) {
     return self;
 }
 
+// 前処理
 - (void)BeginScene {
     // 画面をクリア
     glViewport(0, 0, backingWidth, backingHeight);
     glClearColor(0.3f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
+
+    [EAGLContext setCurrentContext:mpGLContext];
+    
+    // フレームバッファをバインド
+    glBindFramebufferOES(GL_FRAMEBUFFER_OES, mFrameBuffer);
 }
 
+// 描画処理
 - (void)drawScene {
-    //[EAGLContext setCurrentContext:mpGLContext];
-    //glBindFramebufferOES(GL_FRAMEBUFFER_OES, mFrameBuffer);
     drawScene(backingWidth, backingHeight);
-    glBindRenderbufferOES(GL_RENDERBUFFER_OES, mColorBuffer);
+
 }
 
+// 後処理
 - (void)EndScene {
+    // カラーバッファをバインドする
+    // なぜかこれがないとだめ
+    // ここまでフレームバッファ、レンダーバッファの処理をした後に、最後にコンテキスト(レイヤー)への表示をするために必要？
+    glBindRenderbufferOES(GL_RENDERBUFFER_OES, mColorBuffer);
+    
+    // 画面表示
     [mpGLContext presentRenderbuffer:GL_RENDERBUFFER];
 }
 
@@ -297,11 +319,5 @@ static void drawScene(GLfloat screenWidth, GLfloat screenHeight) {
     glDeleteRenderbuffers(1, &mColorBuffer);
     glDeleteRenderbuffers(1, &mDepthBuffer);
 }
-
-
-
-
-
-
 
 @end

@@ -56,6 +56,7 @@
 		3CAC235217B4C9B100FE6BD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC235117B4C9AA00FE6BD3 /* ViewController.m */; };
 		3CAC235417B4CA9E00FE6BD3 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CAC235317B4CA9E00FE6BD3 /* earth.jpg */; };
 		3CAC235717B4CB6200FE6BD3 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC235617B4CB6200FE6BD3 /* TableViewController.m */; };
+		3CAC235B17B4D97C00FE6BD3 /* ParengViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAC235A17B4D97C00FE6BD3 /* ParengViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,6 +145,8 @@
 		3CAC235317B4CA9E00FE6BD3 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
 		3CAC235517B4CB6200FE6BD3 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		3CAC235617B4CB6200FE6BD3 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		3CAC235917B4D97C00FE6BD3 /* ParengViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParengViewController.h; sourceTree = "<group>"; };
+		3CAC235A17B4D97C00FE6BD3 /* ParengViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParengViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +197,8 @@
 				3C1683D417B3797F00111DED /* GLView.m */,
 				3C1683D617B379D500111DED /* GLViewController.h */,
 				3C1683D717B379D500111DED /* GLViewController.m */,
+				3CAC235917B4D97C00FE6BD3 /* ParengViewController.h */,
+				3CAC235A17B4D97C00FE6BD3 /* ParengViewController.m */,
 			);
 			name = OpenGL;
 			sourceTree = "<group>";
@@ -201,10 +206,10 @@
 		3C67D5D917ABC17C00DCB749 = {
 			isa = PBXGroup;
 			children = (
-				3C67D5EB17ABC17C00DCB749 /* SandBox */,
-				3C67D61217ABC17C00DCB749 /* SandBoxTests */,
 				3C67D5E417ABC17C00DCB749 /* Frameworks */,
 				3C67D5E317ABC17C00DCB749 /* Products */,
+				3C67D5EB17ABC17C00DCB749 /* SandBox */,
+				3C67D61217ABC17C00DCB749 /* SandBoxTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,28 +244,27 @@
 		3C67D5EB17ABC17C00DCB749 /* SandBox */ = {
 			isa = PBXGroup;
 			children = (
-				3CAC235017B4C9A800FE6BD3 /* ViewController.h */,
-				3CAC235117B4C9AA00FE6BD3 /* ViewController.m */,
+				3CAC235817B4CBDE00FE6BD3 /* System */,
+				3C67D6BE17B08B8E00DCB749 /* Accelerometer */,
 				3CAC234D17B4C97F00FE6BD3 /* AppDelegate.h */,
 				3CAC234E17B4C98000FE6BD3 /* AppDelegate.m */,
+				3C67D64617ABC34B00DCB749 /* Camera */,
+				3C67D6C317B0BB6100DCB749 /* CommonMacro.h */,
+				3C67D6C217B0BB2200DCB749 /* Directions.geojson */,
+				3C67D6B517B0806F00DCB749 /* Game */,
+				3C67D6B317B0803C00DCB749 /* Mail */,
+				3C67D60017ABC17C00DCB749 /* MainStoryboard_iPad.storyboard */,
+				3C67D6A217AF658900DCB749 /* MainStoryboard_iPhone.storyboard */,
+				3C67D64717ABC36000DCB749 /* Map */,
+				3C67D6D317B1E53300DCB749 /* Network */,
 				3C1683D217B3796700111DED /* OpenGL */,
 				3C16832F17B352BD00111DED /* PDF */,
-				3C16832917B32C1800111DED /* Stats.h */,
-				3C16832A17B32C1800111DED /* Stats.m */,
-				3C67D6D317B1E53300DCB749 /* Network */,
-				3C67D6BE17B08B8E00DCB749 /* Accelerometer */,
-				3C67D6B517B0806F00DCB749 /* Game */,
 				3C67D6B417B0804400DCB749 /* Resource */,
-				3C67D6B317B0803C00DCB749 /* Mail */,
+				3C67D5EC17ABC17C00DCB749 /* Supporting Files */,
 				3C67D6AF17AF81E300DCB749 /* Table */,
 				3C67D69E17AF3AF100DCB749 /* Utility */,
-				3C67D64717ABC36000DCB749 /* Map */,
-				3C67D64617ABC34B00DCB749 /* Camera */,
-				3C67D6A217AF658900DCB749 /* MainStoryboard_iPhone.storyboard */,
-				3C67D60017ABC17C00DCB749 /* MainStoryboard_iPad.storyboard */,
-				3C67D5EC17ABC17C00DCB749 /* Supporting Files */,
-				3C67D6C217B0BB2200DCB749 /* Directions.geojson */,
-				3C67D6C317B0BB6100DCB749 /* CommonMacro.h */,
+				3CAC235017B4C9A800FE6BD3 /* ViewController.h */,
+				3CAC235117B4C9AA00FE6BD3 /* ViewController.m */,
 			);
 			path = SandBox;
 			sourceTree = "<group>";
@@ -393,6 +397,15 @@
 				3C67D6D517B1E7C700DCB749 /* HttpViewController.m */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		3CAC235817B4CBDE00FE6BD3 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				3C16832917B32C1800111DED /* Stats.h */,
+				3C16832A17B32C1800111DED /* Stats.m */,
+			);
+			name = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,6 +546,7 @@
 				3CAC234F17B4C98100FE6BD3 /* AppDelegate.m in Sources */,
 				3CAC235217B4C9B100FE6BD3 /* ViewController.m in Sources */,
 				3CAC235717B4CB6200FE6BD3 /* TableViewController.m in Sources */,
+				3CAC235B17B4D97C00FE6BD3 /* ParengViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

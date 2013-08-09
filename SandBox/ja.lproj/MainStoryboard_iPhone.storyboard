@@ -361,13 +361,22 @@
             </objects>
             <point key="canvasLocation" x="1137" y="1804"/>
         </scene>
-        <!--View Controller-->
+        <!--Pareng View Controller-->
         <scene sceneID="at6-g1-9W8">
             <objects>
-                <viewController storyboardIdentifier="opengl" id="r70-Gr-dDc" customClass="GLViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qjV-ht-1Re" customClass="GLView">
+                <viewController storyboardIdentifier="opengl" id="r70-Gr-dDc" customClass="ParengViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qjV-ht-1Re">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="v8B-h0-8cR">
+                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" id="y2p-4G-3y2"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -697,6 +706,95 @@
         <image name="African Daisy.gif" width="48" height="48"/>
         <image name="IMG_0001.PNG" width="320" height="480"/>
     </resources>
+    <classes>
+        <class className="AccelerometerViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AccelerometerViewController.h"/>
+        </class>
+        <class className="CameraViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CameraViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doCamera:"/>
+                <relationship kind="action" name="doHige:"/>
+                <relationship kind="action" name="doLibrary:"/>
+                <relationship kind="action" name="doSave:"/>
+                <relationship kind="outlet" name="aImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="toolBar" candidateClass="UIToolbar"/>
+            </relationships>
+        </class>
+        <class className="FlipsideViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FlipsideViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+            </relationships>
+        </class>
+        <class className="GameViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GameViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backBtnPush:" candidateClass="UIButton"/>
+                <relationship kind="action" name="buttn1Push:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="aiko" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="chyoki" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="guu" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="kati" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="make" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="paa" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="HttpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HttpViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tapGet:"/>
+                <relationship kind="outlet" name="lblResponse" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scvResponse" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="txtUrl" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="MailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="send:"/>
+                <relationship kind="outlet" name="messageBody" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="MapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="current:"/>
+                <relationship kind="action" name="onTapChangeMode:"/>
+                <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="PDFWebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PDFWebViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="ParengViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ParengViewController.h"/>
+        </class>
+        <class className="TableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewController.h"/>
+        </class>
+        <class className="UtilityMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UtilityMainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="togglePopover:"/>
+                <relationship kind="outlet" name="lblTest" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tapCamera:"/>
+                <relationship kind="action" name="tapCtrl:"/>
+                <relationship kind="action" name="tapGame:"/>
+                <relationship kind="action" name="tapMap:"/>
+                <relationship kind="action" name="tapTable:"/>
+                <relationship kind="action" name="tapUtility:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -17,6 +17,7 @@
 
 @implementation GLViewController
 
+/*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -25,6 +26,41 @@
     }
     return self;
 }
+
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        // Custom initialization
+        
+        [self setView:view];
+    }
+    return self;
+}
+*/
+
+// OpenGL用のコントローラは他のコントローラとは一線をおくようにする。
+// そのため、InterfaceBuilderやらStoryboardとは関連させないよう独自に作る。
+-(id)initWithGLViewFrame:(CGRect)bounds {
+    self = [self init];
+    if(self) {
+        GLView * view = [[GLView alloc] initWithFrame:bounds];
+        [self setView:view];
+    }
+    return self;
+}
+
+// OpenGL用のコントローラは他のコントローラとは一線をおくようにする。
+// そのため、InterfaceBuilderやらStoryboardとは関連させないよう独自に作る。
+-(void)loadView
+{
+    [super loadView];
+    
+    GLView * view = [[GLView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self setView:view];
+}
+
+
 
 - (void)viewDidLoad
 {
@@ -41,6 +77,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+// メインループ
 - (void)MainLoop {
     [(GLView *)self.view BeginScene];
     
@@ -78,6 +115,7 @@
 - (void)viewDidDisappear:(BOOL)animated {
     [mpDisplayLink removeFromRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
     [super viewDidDisappear:animated];
+    
 }
 
 @end
